@@ -15,7 +15,7 @@ body {
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(./images/header-image.png);
+    url(./images/banner.jpg);
   background-size: cover;
   background-position: center;
   padding: 10px 8%;
@@ -69,26 +69,73 @@ nav button {
   margin-top: 24px;
 }
 .email-signup {
-  margin-top: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1rem auto 0;
+  width: 100%;
+  max-width: 40rem;
 }
 
 .email-signup input {
-  padding: 1.5rem 1rem;
+  padding: 0.75rem 1rem;
   background: transparent;
-  width: 50%;
-  text-align: left;
+  width: 70%;
   border: 1px solid #333;
   color: #fff;
   font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
-.email-signup button {
-  padding: 1.5rem 4.5rem;
+.email-signup .button {
+  margin-left: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #db0001;
+  max-width: 100%;
+  display: flex;
   border: 0;
   outline: 0;
-  background: #db0001;
   border-radius: 5px;
   color: #fff;
-  font-size: 18px;
+  font-size: 1rem;
+  line-height: 1;
   font-weight: 500;
-  cursor: pointer;
+  width: auto;
+  min-height: 2.8rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Features css */
+.features {
+  padding: 50px 12%;
+}
+
+.features h2 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+.features p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 1rem 0 0;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+.col-text {
+  flex-basis: 50%;
+}
+.col-img {
+  flex-basis: 50%;
+}
+.col-img img {
+  display: block;
+  width: 90%;
 }
